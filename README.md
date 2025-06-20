@@ -1,4 +1,5 @@
 # killer
 dd-like utility
 
-tomorrow..
+**this project is still unfinished**
+*date: 2025/06/20*
