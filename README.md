@@ -14,7 +14,6 @@ $ ./killer oflag=sync workers=1 if=/dev/zero of=image.img bs=1M cn=512
 base options:
 
   if=file               input file
-
   of=file               output file
 
   bs=bytes              block size
