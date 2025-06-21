@@ -55,9 +55,9 @@ innovative options:
 
 status options:
 
-  status=verbose        verbose option`
+  status=verbose        verbose option
   
-  status=progress       show progress`
+  status=progress       show progress
 ```
 
 # note
