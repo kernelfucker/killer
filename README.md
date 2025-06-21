@@ -63,7 +63,7 @@ status options:
 # note
 **default block size 4mb**
 
-*have fun :)*
+**have fun :)**
 
 # example
 ![image](https://github.com/user-attachments/assets/d5f880e6-2ff2-4c59-86ca-50c16a36ae26)
