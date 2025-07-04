@@ -5,9 +5,9 @@ dd-like utility
 clang killer.c -o killer -Os -s
 
 # usage
-$ ./killer status=verbose status=progress if=/dev/zero of=image.img bs=1M cn=512
+$ ./killer status=verbose status=progress if=/dev/zero of=image.img bs=1m cn=512
 
-$ ./killer oflag=sync workers=1 if=/dev/zero of=image.img bs=1M cn=512
+$ ./killer oflag=sync workers=1 if=/dev/zero of=image.img bs=1m cn=512
 
 # options
 ```
