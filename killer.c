@@ -19,6 +19,8 @@
 #define maxerrs 10
 #define maxwers 20
 
+#define version "0.2"
+
 typedef struct{
 	char *inf;		// infile
 	char *outf;		// outfile
@@ -65,7 +67,6 @@ void d(const char *m){
 }
 
 void usage(){
-	fprintf(stderr, "killer - dd-like utility\n");
 	fprintf(stderr, "usage: killer [options]..\n");
 	fprintf(stderr, "base options:\n");
 	fprintf(stderr, "  if=file		input file\n");
@@ -91,8 +92,9 @@ void usage(){
 	fprintf(stderr, "\nstatus options:\n");
 	fprintf(stderr, "  status=verbose	verbose option\n");
 	fprintf(stderr, "  status=progress	show progress\n");
-	fprintf(stderr, "\nhelp:\n");
-	fprintf(stderr, "  --help		display this\n");
+	fprintf(stderr, "\noptions:\n");
+	fprintf(stderr, "  -v			show version information\n");
+	fprintf(stderr, "  -h			display this\n");	
 	exit(EXIT_FAILURE);
 }
 
@@ -110,7 +112,7 @@ void pargs(int argc, char **argv, Opts *opts){
 		} else if(strncmp(a, "bs=", 3) == 0){
 			char *end;
 			opts->bs = strtol(a + 3, &end, 10);
-			if(*end == 'M'){
+			if(*end == 'm'){
 				opts->bs *= 1024 * 1024;
 			} else if(*end == 'K'){
 				opts->bs *= 1024;
@@ -157,7 +159,10 @@ void pargs(int argc, char **argv, Opts *opts){
 		} else if(strcmp(a, "status=verbose") == 0){
 			opts->verbose = 1;
 			opts->progress = 1;
-		} else if(strcmp(a, "--help") == 0){
+		} else if(strcmp(a, "-v") == 0){
+			printf("killer-%s\n", version);
+			exit(EXIT_FAILURE);
+		} else if(strcmp(a, "-h") == 0){
 			usage();
 		}
 	}
