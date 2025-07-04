@@ -47,4 +47,4 @@ status options:
 **have fun :)**
 
 # example
-![image](https://github.com/user-attachments/assets/d5f880e6-2ff2-4c59-86ca-50c16a36ae26)
+![image](https://github.com/user-attachments/assets/b005f286-652f-42cd-8b90-f38f8ba51ef7)
