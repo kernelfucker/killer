@@ -2,7 +2,7 @@
 dd-like utility
 
 # compile
-clang killer.c -o killer
+clang killer.c -o killer -Os -s
 
 # usage
 $ ./killer status=verbose status=progress if=/dev/zero of=image.img bs=1M cn=512
