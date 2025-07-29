@@ -42,7 +42,7 @@ status options:
 ```
 
 # note
-**default block size 4mb**
+**default block size 4m**
 
 **have fun :)**
 
